@@ -408,8 +408,8 @@ class Sickchill < Formula
   service do
     run [opt_bin/"sickchill", "--datadir", etc/"sickchill", "-q"]
   end
-
+    
   test do
-    false
+    run [opt_bin/"sickchill", "--help"]
   end
 end
