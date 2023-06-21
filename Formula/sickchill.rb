@@ -10,7 +10,7 @@ class Sickchill < Formula
   depends_on "cffi"
   depends_on "pycparser"
   depends_on "python3"
-  depends_on "pyyaml
+  depends_on "pyyaml"
 
   uses_from_macos "libxml2"
   uses_from_macos "libxslt"
