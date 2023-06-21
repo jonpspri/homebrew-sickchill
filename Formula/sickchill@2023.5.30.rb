@@ -1,4 +1,4 @@
-class SickchillAt2023530 < Formula
+class SickchillAT2023530 < Formula
   include Language::Python::Virtualenv
 
   desc "Media library mega tool, packaged into a homebrew bottle with a service"
