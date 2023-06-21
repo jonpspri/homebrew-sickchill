@@ -410,6 +410,6 @@ class SickchillAt2023530 < Formula
   end
 
   test do
-    run [opt_bin/"sickchill, "--help"]
+    run [opt_bin/"sickchill", "--help"]
   end
 end
