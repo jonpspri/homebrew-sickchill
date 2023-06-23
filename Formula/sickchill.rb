@@ -6,6 +6,13 @@ class Sickchill < Formula
   url "https://files.pythonhosted.org/packages/ba/75/d27b26bdac593423026a8d606551de134f745fb36ec991ff0a70d4dfb2a0/sickchill-2023.5.30.tar.gz"
   sha256 "be49f0d6c01f479cb0f066e88582c4971b683a11d50149ffe81b1bdc4447c2ab"
 
+  bottle do
+    root_url "https://github.com/SickChill/homebrew-sickchill/releases/download/sickchill-2023.5.30"
+    rebuild 1
+    sha256 cellar: :any,                 ventura:      "ab44c7bb8c2c2103dd28ec155c5b7f1f25b183ef32df4c6dc150b9835a2749c5"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "1d15467184f58cbd487a5425270b7a558e9876a23cc00f48942c19358850161d"
+  end
+
   depends_on "rust" => :build
   depends_on "cffi"
   depends_on "pycparser"
