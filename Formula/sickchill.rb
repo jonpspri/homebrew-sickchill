@@ -406,10 +406,10 @@ class Sickchill < Formula
   end
 
   service do
-    run [opt_bin/"sickchill", "--datadir", etc/"sickchill", "-q"]
+    run [opt_bin/"sickchill", "--datadir", etc/"sickchill", "--quiet", "--nolaunch]
   end
 
   test do
-    run [opt_bin/"sickchill", "--help"]
+    run [opt_bin/"sickchill", "--force-update"]
   end
 end
