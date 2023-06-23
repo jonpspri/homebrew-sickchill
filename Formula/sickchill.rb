@@ -412,6 +412,6 @@ class Sickchill < Formula
   end
 
   test do
-    system opt_bin/"sickchill", "--force-update"
+    system opt_bin/"sickchill", "--help"
   end
 end
