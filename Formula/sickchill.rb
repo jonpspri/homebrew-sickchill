@@ -406,7 +406,7 @@ class Sickchill < Formula
   end
 
   service do
-    run [opt_bin/"sickchill", "--datadir", etc/"sickchill", "--quiet", "--nolaunch]
+    run [opt_bin/"sickchill", "--datadir", etc/"sickchill", "--quiet", "--nolaunch"]
   end
 
   test do
