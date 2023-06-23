@@ -407,9 +407,11 @@ class Sickchill < Formula
 
   service do
     run [opt_bin/"sickchill", "--datadir", etc/"sickchill", "--quiet", "--nolaunch"]
+    keep_alive true
+    working_dir var
   end
 
   test do
-    run [opt_bin/"sickchill", "--force-update"]
+    system opt_bin/"sickchill", "--force-update"
   end
 end
